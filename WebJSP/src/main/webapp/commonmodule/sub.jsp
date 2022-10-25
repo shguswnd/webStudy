@@ -1,0 +1,5 @@
+<p>
+	SUB PAGE CONTENTS
+	<br>
+	COMMON PAGE
+</p>

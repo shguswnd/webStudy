@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" href="fonts/feather/style.css">
+<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+  .w3-greyscale,.w3-grayscale{
+    filter:grayscale(0)}.w3-greyscale-min,.w3-grayscale-min{filter:grayscale(0);
+  }
+  .w3-sepia{
+    filter:sepia(0)}.w3-sepia-max,.w3-hover-sepia:hover{filter:sepia(0)}.w3-sepia-min{filter:sepia(0) !important
+    }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    height:  500px;
+    margin: auto;
+
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  .bgimg{
+    padding-top: 100px;
+
+  }
+
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+img{
+  background-position: center;
+  background-size: cover;
+
+  margin-bottom: 12px;
+  width: 150%;
+  height: 130%; 
+  flex:1;
+
+  opacity: 100;
+}
+.bgimg w3-display-container w3-grayscale-min {
+  background-color: aqua;
+  
+}
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">맛집!</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">소개</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">최고의 메뉴</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">추천♥</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="container">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+  
+        <div class="item active">
+          <img src="./images/top_1.jpg" alt="Chania" width="460" height="345">
+          <div class="carousel-caption">
+            <h3>Chania</h3>
+            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="./images/top_2.jpg" alt="Chania" width="460" height="345">
+          <div class="carousel-caption">
+            <h3>Chania</h3>
+            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="./images/top_3.jpg" alt="Flower" width="460" height="345">
+          <div class="carousel-caption">
+            <h3>Flowers</h3>
+            <p>Beautiful flowers in Kolymbari, Crete.</p>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="./images/top_4.jpg" alt="Flower" width="460" height="345">
+          <div class="carousel-caption">
+            <h3>Flowers</h3>
+            <p>Beautiful flowers in Kolymbari, Crete.</p>
+          </div>
+        </div>
+    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    
+  </div>
+  <div class="w3-display-middle w3-center">
+
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+
+  
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">노현중</span></h5>
+    <p>저는 KASA를 다니고 있습니다.</p>
+    <p>지금은 웹페이지 공부를 하고 있지요.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"언젠간 KASA를 졸업하는 날이 오겠지요...?</i></p>
+      <p>KASA를 졸업하기전 남은 기간 열심히 맛집들을 탐방 해보야요.</p>
+      <p>열심히 힘내어 공부하기 위해서 맛집들을 소개해드릴께요.!</p>
+    </div>
+    <!-- <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"> -->
+    <p><strong>출근 퇴근 시간:</strong> 매일 평일 9am to 19pm.</p>
+    <p><strong>주소:</strong> 서울시 종로구 창경궁로 254 동원빌딩 7층 운영사무</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">맛집 리스트</span></h5>
+  
+
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">음식집</div>
+      </a>
+      <!-- <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">음료가게</div>
+      </a> -->
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+  
+  <!-- 음료가게 이미지 -->
+  <div class="site-section" id="portfolio-section">
+    <div class="container">
+
+      <div class="filters" data-aos="fade-up" data-aos-delay="100">
+        <ul>
+          <li class="active" data-filter="*">모두</li>
+          <li data-filter=".packaging">양식</li>
+          <li data-filter=".mockup">일식</li>
+          <li data-filter=".typography">한식</li>
+          <li data-filter=".photography">중식</li>
+        </ul>
+      </div>
+
+      <div class="filters-content mb-5 w3-sepia" data-aos="fade-up" data-aos-delay="200">
+        <div class="row grid">
+          <div class="isotope-card col-sm-4 all typography">
+            <a href="images/menulist/미도인.jpeg" >
+              <img src="images/menulist/미도인.jpeg" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>Card Vol. 3</h3>
+                <div class="cat">Mockup</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="isotope-card col-sm-4 all typography">
+            <a href="images/menulist/또오리.jpg" >
+              <img src="images/menulist/또오리.jpg" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>Card Vol. 3</h3>
+                <div class="cat">Mockup</div>
+              </div>
+            </a>
+          </div>
+          <div class="isotope-card col-sm-4 all typography">
+            <a href="images/menulist/삼겹살대통령.jpeg">
+              <img src="images/menulist/삼겹살대통령.jpeg" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>Card Vol. 3</h3>
+                <div class="cat">Mockup</div>
+              </div>
+            </a>
+          </div>
+          <div class="isotope-card col-sm-4 all packaging">
+            <a href="images/menulist/서울프랑스.jfif">
+              <img src="images/menulist/서울프랑스.jfif" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>House Design</h3>
+                <div class="cat">Typography</div>
+              </div>
+            </a>
+
+          </div>                            
+          <div class="isotope-card col-sm-4 all packaging">
+            <a href="images/menulist/팟제리아오.jpg" data-fancybox="gal">
+              <img src="images/menulist/팟제리아오.jpg" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>WoW</h3>
+                <div class="cat">Mockup</div>
+              </div>
+            </a>
+          </div>
+          <div class="isotope-card col-sm-4 all typography">
+            <a href="images/menulist/메밀향그집.jpg" data-fancybox="gal">
+              <img src="images/menulist/메밀향그집.jpg" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>Seat</h3>
+                <div class="cat">Packaging</div>
+              </div>
+            </a>
+          </div>
+          <div class="isotope-card col-sm-4 all typography">
+            <a href="images/menulist/깔리.jpg" data-fancybox="gal">
+              <img src="images/menulist/깔리.jpg" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>Seat</h3>
+                <div class="cat">Packaging</div>
+              </div>
+            </a>
+          </div>
+          <div class="isotope-card col-sm-4 all mockup">
+            <a href="images/menulist/정돈.jpg" data-fancybox="gal">
+              <img src="images/menulist/정돈.jpg" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>House Design</h3>
+                <div class="cat">Photography</div>
+              </div>
+            </a>
+          </div>
+          <div class="isotope-card col-sm-4 all photography">
+            <a href="images/menulist/계향각.jpg" data-fancybox="gal">
+              <img src="images/menulist/계향각.jpg" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>House Design</h3>
+                <div class="cat">Photography</div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="isotope-card col-sm-4 all packaging">
+            <a href="images/menulist/버거파크.jpg" data-fancybox="gal">
+              <img src="images/menulist/버거파크.jpg" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>House Design</h3>
+                <div class="cat">Photography</div>
+              </div>
+            </a>
+
+          </div>
+          <div class="isotope-card col-sm-4 all typography">
+            <a href="images/menulist/혜화도담.jpg" data-fancybox="gal">
+              <img src="images/menulist/혜화도담.jpg" alt="Image" class="img-fluid">
+              <div class="contents">
+                <h3>House Design</h3>
+                <div class="cat">Photography</div>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- 음료가게 이미지 -->
+
+
+
+    <!-- <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>   -->
+    <!-- <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;"> -->
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">맛집 주소를 추천하라!</span></h5>
+    <p>추천 맛집 주소를 입력하라.</p>
+    <br>
+      <p>
+      당신의 이름과 추천 맛집 주소, 맛집 이름을 입력하여 메세지를 보내시오....</p>
+    
+    <p><span class="w3-tag">참고로!</span> 나는 내 개인적 취향으로 기준으로 최고의 맛집을 선별하여 받은 메세지에서 괜찮은 곳을 선별하여 맛집 등록을 할 것이다.</p>
+    <p><strong>추천</strong> :</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="location" required name="Location"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2022-10-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special Menu" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+<!-- DragAndDrop -->
+<div class="board">
+  <div class="board">
+    <h3></h3>
+  </div>
+</div>
+
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+window.onload = function(){
+    let cards = document.querySelectorAll('.card');
+    console.log(cards);
+    let dropzones = document.querySelectorAll('.dropzone');
+    // console.log(dropzones);
+
+    //카드 요소에 드래그 이벤트 리스너 할당
+    cards.forEach((card) => {
+      card.addEventListener("dragstart", dragStart);
+      // card.addEventListener("drag", drag);
+      // card.addEventListener("dragend", dragEnd);
+});
+}
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+
+
+
+
+
+
+
+  <!-- .untrtee_co-section -->
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/imagesloaded.pkgd.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jarallax.min.js"></script>
+  <script src="js/jarallax-element.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+
+  <script src="js/jquery.lettering.js"></script>
+
+
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/ScrollMagic.min.js"></script>
+  <script src="js/scrollmagic.animation.gsap.min.js"></script>
+  <script src="js/debug.addIndicators.min.js"></script>
+
+
+  <script src="js/custom.js"></script>
+
+
+
+
+</body>
+</html>
